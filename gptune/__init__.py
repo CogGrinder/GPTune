@@ -15,20 +15,20 @@
 # other to do so.
 #
 
-# All functions and classes are accessible with GPTune.<function/class name>
+# All functions and classes are accessible with gptune.<function/class name>
 # and with from GPTune import <function/class name>
-from GPTune.callcgp import *
-from GPTune.callhpbandster import *
-from GPTune.callhybrid import *
-from GPTune.callopentuner import *
-from GPTune.computer import *
-from GPTune.crowdtune import *
-from GPTune.database import *
-from GPTune.data import *
-from GPTune.gptune import *
-# from GPTune.lcm import * # Needs mpi4py
-from GPTune.model import *
-from GPTune.options import *
-from GPTune.problem import *
-from GPTune.sample import *
-from GPTune.search import *
+from gptune.callcgp import *
+from gptune.callhpbandster import *
+from gptune.callhybrid import *
+from gptune.callopentuner import *
+from gptune.computer import *
+from gptune.crowdtune import *
+from gptune.database import *
+from gptune.data import *
+from gptune.gptune import *
+# from gptune.lcm import * # Needs mpi4py
+from gptune.model import *
+from gptune.options import *
+from gptune.problem import *
+from gptune.sample import *
+from gptune.search import *

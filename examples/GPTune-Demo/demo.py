@@ -43,7 +43,7 @@ logging.getLogger('matplotlib.font_manager').disabled = True
 from autotune.search import *
 from autotune.space import *
 from autotune.problem import *
-from GPTune import * # import all
+from gptune import * # import all
 
 
 import argparse
@@ -51,8 +51,8 @@ import argparse
 import numpy as np
 import time
 
-# from GPTune.callopentuner import OpenTuner
-# from GPTune.callhpbandster import HpBandSter
+# from gptune.callopentuner import OpenTuner
+# from gptune.callhpbandster import HpBandSter
 
 
 
