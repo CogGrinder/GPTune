@@ -15,21 +15,21 @@
 # other to do so.
 #
 
-import .callcgp as callcgp
-import .callhpbandster as callhpbandster
-import .callhybrid as callhybrid
-import .callopentuner as callopentuner
-import .computer as computer
-import .crowdtune as crowdtune
-import .database as database
-import .data as data
-import .gptune as gptune
-import .lcm as lcm
-import .model as model
-import .options as options
-import .problem as problem
-import .sample as sample
-import .search as search
+from .callcgp import callcgp
+from .callhpbandster import callhpbandster
+from .callhybrid import callhybrid
+from .callopentuner import callopentuner
+from .computer import computer
+from .crowdtune import crowdtune
+from .database import database
+from .data import data
+from .gptune import gptune
+from .lcm import lcm
+from .model import model
+from .options import options
+from .problem import problem
+from .sample import sample
+from .search import search
 
 all = [
     'callcgp',
