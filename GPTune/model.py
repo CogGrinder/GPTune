@@ -22,9 +22,9 @@ import numpy as np
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-from problem import Problem
-from computer import Computer
-from data import Data
+from .problem import Problem
+from .computer import Computer
+from .data import Data
 
 
 import math
