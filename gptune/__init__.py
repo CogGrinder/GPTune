@@ -26,7 +26,7 @@ from gptune.crowdtune import *
 from gptune.database import *
 from gptune.data import *
 from gptune.gptunemain import *
-# from gptune.lcm import * # Needs mpi4py
+# from gptune.lcm import * # FIXME Needs mpi4py
 from gptune.model import *
 from gptune.options import *
 from gptune.problem import *
