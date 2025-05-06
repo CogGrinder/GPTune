@@ -37,7 +37,7 @@ import os
 # import mpi4py
 import logging
 
-sys.path.insert(0, os.path.abspath(__file__ + "/../../../GPTune/"))
+# sys.path.insert(0, os.path.abspath(__file__ + "/../../../GPTune/"))
 logging.getLogger('matplotlib.font_manager').disabled = True
 
 from autotune.search import *
