@@ -25,7 +25,7 @@ from gptune.computer import *
 from gptune.crowdtune import *
 from gptune.database import *
 from gptune.data import *
-from gptune.gptune import *
+from gptune.gptunemain import *
 # from gptune.lcm import * # Needs mpi4py
 from gptune.model import *
 from gptune.options import *

@@ -26,8 +26,8 @@ def QueryFunctionEvaluations(api_key:str=None,
     import json
 
     # GPTune history database
-    crowd_repo_download_url = "http://gptune.lbl.gov/repo/direct-download/"
-    crowd_repo_upload_url = "http://gptune.lbl.gov/repo/direct-upload/"
+    crowd_repo_download_url = "http://gptunemain.lbl.gov/repo/direct-download/"
+    crowd_repo_upload_url = "http://gptunemain.lbl.gov/repo/direct-upload/"
     ## debug
     #crowd_repo_download_url = "http://127.0.0.1:8000/repo/direct-download/"
     #crowd_repo_upload_url = "http://127.0.0.1:8000/repo/direct-upload/"
@@ -106,8 +106,8 @@ def QueryPredictOutput(api_key:str=None,
             configuration_space=configuration_space)
 
     if type(input_parameter) == dict:
-        import gptune
-        return gptune.PredictOutput(
+        import gptunemain
+        return gptunemain.PredictOutput(
                 problem_space = problem_space,
                 modeler = modeler,
                 input_task = input_task,
@@ -121,8 +121,8 @@ def QueryPredictOutput(api_key:str=None,
             tuning_parameter = problem_space["parameter_space"][i]
             input_parameter_dict[tuning_parameter["name"]] = input_parameter[i]
 
-        import gptune
-        return gptune.PredictOutput(
+        import gptunemain
+        return gptunemain.PredictOutput(
                 problem_space = problem_space,
                 modeler = modeler,
                 input_task = input_task,
@@ -143,8 +143,8 @@ def QuerySurrogateModel(api_key:str=None,
             problem_space = problem_space,
             configuration_space=configuration_space)
 
-    import gptune
-    return gptune.BuildSurrogateModel(
+    import gptunemain
+    return gptunemain.BuildSurrogateModel(
             problem_space = problem_space,
             modeler = modeler,
             input_task = [input_task],
@@ -165,8 +165,8 @@ def QuerySensitivityAnalysis(api_key:str=None,
             problem_space = problem_space,
             configuration_space=configuration_space)
 
-    import gptune
-    return gptune.SensitivityAnalysis(
+    import gptunemain
+    return gptunemain.SensitivityAnalysis(
             problem_space = problem_space,
             modeler = modeler,
             method = method,
