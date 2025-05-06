@@ -15,18 +15,37 @@
 # other to do so.
 #
 
-from .callcgp import *
-from .callhpbandster import *
-from .callhybrid import *
-from .callopentuner import *
-from .computer import *
-from .crowdtune import *
-from .database import *
-from .data import *
-from .gptune import *
-from .lcm import *
-from .model import *
-from .options import *
-from .problem import *
-from .sample import *
-from .search import *
+import .callcgp as callcgp
+import .callhpbandster as callhpbandster
+import .callhybrid as callhybrid
+import .callopentuner as callopentuner
+import .computer as computer
+import .crowdtune as crowdtune
+import .database as database
+import .data as data
+import .gptune as gptune
+import .lcm as lcm
+import .model as model
+import .options as options
+import .problem as problem
+import .sample as sample
+import .search as search
+
+all = [
+    'callcgp',
+    'callhpbandster',
+    'callhybrid',
+    'callopentuner',
+    'computer',
+    'crowdtune',
+    'database',
+    'data',
+    'gptune',
+    'lcm',
+    'model',
+    'options',
+    'problem',
+    'sample',
+    'search'
+]
+__all__ = all
